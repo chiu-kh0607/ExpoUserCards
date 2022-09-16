@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, TouchableWithoutFeedback, useWindowDimensions } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
@@ -6,6 +6,8 @@ export const styles = StyleSheet.create({
     backgroundColor: "#000",
     alignItems: "center",
     justifyContent: "center",
+    paddingTop:100,
+    paddingBottom:10,
   },
   userList: {
     paddingTop: 50,
@@ -25,4 +27,23 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 10,
   },
+  input:{
+    height: 30,
+    width:100,
+    margin: 5,
+    paddingLeft:5,
+    paddingRight:5,
+    backgroundColor:"#fff",
+  },
+  button:{
+    height: 30,
+    width:80,
+    textAlign:"center",
+    marginLeft:10,
+    backgroundColor:"#20b2aa",
+  },
+  topBar:{
+    alignItems:"center",
+    flexDirection:"row",
+  }
 });
